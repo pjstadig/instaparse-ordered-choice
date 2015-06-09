@@ -1,0 +1,7 @@
+<Symbols> := Symbol (WS+ Symbols)?
+
+Symbol := NonDelim+
+
+<NonDelim> := !WS #'.'
+
+<WS> := <' '> / <','> / <'\t'> / <'\r'> / <'\n'>
